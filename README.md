@@ -1,6 +1,6 @@
-# Roomora
-Roomora - Hotel Room Booking App
-Roomora is a simple and intuitive mobile application designed for Android, allowing users to seamlessly book hotel rooms. This app offers a straightforward interface to input booking details like guest name, check-in, and check-out dates, and navigate through a booking confirmation page.
+# ROOMORAA
+ROOMORAA - Hotel Room Booking App
+ROOMORAA is a simple and intuitive mobile application designed for Android, allowing users to seamlessly book hotel rooms. This app offers a straightforward interface to input booking details like guest name, check-in, and check-out dates, and navigate through a booking confirmation page.
 
 Features
 User-friendly Interface: Clean, simple design for easy navigation.
@@ -23,7 +23,7 @@ Android Emulator or a physical device for testing.
 
 Installation
 Clone the repository:
-git clone https://github.com/your-repo/Roomora.git
+git clone https://github.com/your-repo/ROOMORAA.git
 Open the project in Android Studio.
 Build the project to download dependencies and set up the environment.
 Run the app on an Android Emulator or connected physical device.
