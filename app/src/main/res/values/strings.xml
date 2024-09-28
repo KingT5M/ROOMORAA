@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ROOMORAA HOTEL</string>
+    <string name="confirmation_message">Your booking is confirmed!</string>
+    <string name="back_button">Back to Home</string>
+    <string name="booking_confirmation_icon">Booking confirmation icon</string>
+    <string name="hotel_icon">Hotel icon</string>
+    <string name="guest_name_hint">Enter Guest Name</string>
+    <string name="guest_id_hint">Enter Guest ID Number</string>
+    <string name="room_number_hint">Enter Room Number</string>
+    <string name="book_now">Book Now</string>
+</resources>
