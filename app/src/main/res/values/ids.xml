@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btn_next" type="id" />
+    <item name="btn_upload_id" type="id" />
+    <item name="spinner_room_type" type="id" />
+    <item name="checkin_date" type="id" />
+    <item name="checkout_date" type="id" />
+    <item name="checkbox_kids_bed" type="id" />
+    <item name="checkbox_room_service" type="id" />
+    <item name="btn_confirm_booking" type="id" />
+    <item name="tv_booking_summary" type="id" />
+    <item name="btn_download_pdf" type="id" />
+    <item name="btn_back_to_home" type="id" />
+</resources>

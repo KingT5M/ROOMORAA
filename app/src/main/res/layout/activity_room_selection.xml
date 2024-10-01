@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Room Type Spinner -->
+    <Spinner
+        android:id="@+id/spinner_room_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/room_types" />
+
+    <!-- Check-in Date Picker -->
+    <EditText
+        android:id="@+id/checkin_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/check_in_date"
+        android:focusable="false"
+        android:clickable="true" />
+
+    <!-- Check-out Date Picker -->
+    <EditText
+        android:id="@+id/checkout_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/check_out_date"
+        android:focusable="false"
+        android:clickable="true" />
+
+    <!-- Checkbox for Kids Bed -->
+    <CheckBox
+        android:id="@+id/checkbox_kids_bed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_kid_s_bed_50" />
+
+    <!-- Checkbox for Room Service -->
+    <CheckBox
+        android:id="@+id/checkbox_room_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/room_service_100" />
+
+    <!-- Confirm Booking Button -->
+    <Button
+        android:id="@+id/btn_confirm_booking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_booking" />
+</LinearLayout>

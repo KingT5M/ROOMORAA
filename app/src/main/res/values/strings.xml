@@ -8,4 +8,14 @@
     <string name="guest_id_hint">Enter Guest ID Number</string>
     <string name="room_number_hint">Enter Room Number</string>
     <string name="book_now">Book Now</string>
+    <string name="booking_summary">Booking Summary</string>
+    <string name="download_pdf">Download PDF</string>
+    <string name="back_to_home">Back to Home</string>
+    <string name="check_in_date">Check-in Date</string>
+    <string name="check_out_date">Check-out Date</string>
+    <string name="add_kid_s_bed_50">Add Kid\'s Bed ($50)</string>
+    <string name="room_service_100">Room Service ($100)</string>
+    <string name="confirm_booking">Confirm Booking</string>
+    <string name="upload_id">Upload ID</string>
+    <string name="next">Next</string>
 </resources>
