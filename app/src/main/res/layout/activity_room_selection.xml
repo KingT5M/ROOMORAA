@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- Guiding Text for Room Type -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_your_room_type"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
     <!-- Room Type Spinner -->
     <Spinner
         android:id="@+id/spinner_room_type"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/room_types" />
+        android:layout_marginBottom="16dp"/> <!-- Added margin for spacing -->
+
+    <!-- Guiding Text for Check-in Date -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_your_check_in_date"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
 
     <!-- Check-in Date Picker -->
     <EditText
@@ -19,8 +34,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/check_in_date"
-        android:focusable="false"
-        android:clickable="true" />
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_marginBottom="16dp"/> <!-- Added margin for spacing -->
+
+    <!-- Guiding Text for Check-out Date -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_your_check_out_date"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
 
     <!-- Check-out Date Picker -->
     <EditText
@@ -28,8 +52,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/check_out_date"
-        android:focusable="false"
-        android:clickable="true" />
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_marginBottom="16dp"/> <!-- Added margin for spacing -->
+
+    <!-- Guiding Text for Kids Bed Checkbox -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_a_kid_s_bed_extra_50"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
 
     <!-- Checkbox for Kids Bed -->
     <CheckBox
@@ -37,6 +70,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/add_kid_s_bed_50" />
+
+    <!-- Guiding Text for Room Service Checkbox -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_room_service_extra_100"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
 
     <!-- Checkbox for Room Service -->
     <CheckBox
@@ -50,5 +91,6 @@
         android:id="@+id/btn_confirm_booking"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/confirm_booking" />
+        android:text="@string/confirm_booking"
+        android:layout_marginTop="20dp" /> <!-- Added margin for better UI -->
 </LinearLayout>

@@ -8,6 +8,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.ArrayAdapter;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.Calendar;
@@ -68,6 +69,7 @@ public class RoomSelectionActivity extends AppCompatActivity {
                 startActivity(intent);
             } else {
                 // Handle error case when no room is selected
+                Toast.makeText(RoomSelectionActivity.this, "Please select a room type", Toast.LENGTH_SHORT).show();
             }
         });
     }

@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="room_types" />
+    <string-array name="room_types">
+        <item>Single Bed</item>
+        <item>Double Room</item>
+        <item>Penthouse</item>
+    </string-array>
 </resources>

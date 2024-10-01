@@ -18,4 +18,22 @@
     <string name="confirm_booking">Confirm Booking</string>
     <string name="upload_id">Upload ID</string>
     <string name="next">Next</string>
+    <string name="enter_your_id_number_digits_only">Enter your ID number (digits only)</string>
+    <string name="enter_your_name_as_per_your_id">Enter your name as per your ID</string>
+    <string name="select_your_room_type">Select your room type</string>
+    <string name="choose_your_check_in_date">Choose your check-in date</string>
+    <string name="choose_your_check_out_date">Choose your check-out date</string>
+    <string name="add_a_kid_s_bed_extra_50">Add a kid\'s bed (extra $50)</string>
+    <string name="add_room_service_extra_100">Add room service (extra $100)</string>
+    <string name="id_number">ID Number:</string>
+    <string name="total_price">Total Price:</string>
+    <string name="extra_costs">Extra Costs:</string>
+    <string name="room_price">Room Price:</string>
+    <string name="check_out">Check-out:</string>
+    <string name="check_in">Check-in:</string>
+    <string name="room_type">Room Type:</string>
+    <string name="guest_name">Guest Name:</string>
+    <string name="pdf_downloaded_to">PDF downloaded to: %1$s</string>
+    <string name="error_generating_pdf">Error: Could not generate PDF.</string>
+    <string name="error_creating_pdf" />
 </resources>
