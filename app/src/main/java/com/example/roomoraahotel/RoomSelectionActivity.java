@@ -26,6 +26,10 @@ public class RoomSelectionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_room_selection);
 
+        // Retrieve guest name and ID number from the Intent
+        String guestName = getIntent().getStringExtra("guestName");
+        String idNumber = getIntent().getStringExtra("idNumber");
+
         // Initialize UI elements
         roomTypeSpinner = findViewById(R.id.spinner_room_type);
         checkInDate = findViewById(R.id.checkin_date);
@@ -49,6 +53,15 @@ public class RoomSelectionActivity extends AppCompatActivity {
         checkInDate.setOnClickListener(v -> showDatePickerDialog(checkInDate));
         checkOutDate.setOnClickListener(v -> showDatePickerDialog(checkOutDate));
 
+        // Add focus change listeners to the EditTexts
+        checkInDate.setOnFocusChangeListener((v, hasFocus) -> {
+            if (hasFocus) showDatePickerDialog(checkInDate);
+        });
+
+        checkOutDate.setOnFocusChangeListener((v, hasFocus) -> {
+            if (hasFocus) showDatePickerDialog(checkOutDate);
+        });
+
         // Confirm booking button action
         confirmBooking.setOnClickListener(v -> {
             // Calculate total price
@@ -62,6 +75,9 @@ public class RoomSelectionActivity extends AppCompatActivity {
 
                 // Move to ConfirmationActivity (Page 4)
                 Intent intent = new Intent(RoomSelectionActivity.this, ConfirmationActivity.class);
+                // Pass all necessary data to ConfirmationActivity
+                intent.putExtra("guestName", guestName);
+                intent.putExtra("idNumber", idNumber);
                 intent.putExtra("roomType", selectedRoom);
                 intent.putExtra("checkIn", checkInDate.getText().toString());
                 intent.putExtra("checkOut", checkOutDate.getText().toString());

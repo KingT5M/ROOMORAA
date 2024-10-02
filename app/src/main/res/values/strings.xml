@@ -27,6 +27,7 @@
     <string name="add_room_service_extra_100">Add room service (extra $100)</string>
     <string name="id_number">ID Number:</string>
     <string name="total_price">Total Price:</string>
+    <string name="successfully_booked">SUCCESSFULLY BOOKED!!</string>
     <string name="extra_costs">Extra Costs:</string>
     <string name="room_price">Room Price:</string>
     <string name="check_out">Check-out:</string>

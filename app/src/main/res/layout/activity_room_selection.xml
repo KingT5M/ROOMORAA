@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/hotelTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="#3F51B5"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingBottom="20dp"
+        android:textAppearance="?attr/textAppearanceHeadline5" />
+
+
 
     <!-- Guiding Text for Room Type -->
     <TextView
@@ -18,7 +34,8 @@
         android:id="@+id/spinner_room_type"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"/> <!-- Added margin for spacing -->
+        android:layout_marginBottom="16dp"
+        android:minHeight="48dp" /> <!-- Added margin for spacing -->
 
     <!-- Guiding Text for Check-in Date -->
     <TextView
@@ -33,10 +50,15 @@
         android:id="@+id/checkin_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/check_in_date"
-        android:focusable="true"
+        android:layout_marginBottom="16dp"
         android:clickable="true"
-        android:layout_marginBottom="16dp"/> <!-- Added margin for spacing -->
+        android:focusable="true"
+        android:hint="@string/check_in_date"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        tools:ignore="VisualLintTextFieldSize" /> <!-- Added margin for spacing -->
 
     <!-- Guiding Text for Check-out Date -->
     <TextView
@@ -51,10 +73,16 @@
         android:id="@+id/checkout_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/check_out_date"
-        android:focusable="true"
+        android:layout_marginBottom="16dp"
         android:clickable="true"
-        android:layout_marginBottom="16dp"/> <!-- Added margin for spacing -->
+        android:focusable="true"
+        android:hint="@string/check_out_date"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+
+        tools:ignore="VisualLintTextFieldSize" /> <!-- Added margin for spacing -->
 
     <!-- Guiding Text for Kids Bed Checkbox -->
     <TextView

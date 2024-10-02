@@ -16,14 +16,11 @@ public class ConfirmationActivity extends AppCompatActivity {
 
         // Retrieve booking data from Intent
         String guestName = getIntent().getStringExtra("guestName");
+        String idNumber = getIntent().getStringExtra("idNumber"); // Added to retrieve ID number
         String roomType = getIntent().getStringExtra("roomType");
-        String checkInDate = getIntent().getStringExtra("checkInDate");
-        String checkOutDate = getIntent().getStringExtra("checkOutDate");
-        int roomPrice = getIntent().getIntExtra("roomPrice", 0);
-        boolean kidsBedIncluded = getIntent().getBooleanExtra("kidsBedIncluded", false);
-        boolean roomServiceIncluded = getIntent().getBooleanExtra("roomServiceIncluded", false);
-        int extraCosts = getIntent().getIntExtra("extraCosts", 0);
-        int totalPrice = roomPrice + extraCosts;
+        String checkInDate = getIntent().getStringExtra("checkIn");
+        String checkOutDate = getIntent().getStringExtra("checkOut");
+        int totalPrice = getIntent().getIntExtra("totalPrice", 0); // Updated to use totalPrice directly
 
         // Set up views
         bookingSummaryTextView = findViewById(R.id.tv_booking_summary);
@@ -31,13 +28,10 @@ public class ConfirmationActivity extends AppCompatActivity {
 
         // Display booking summary
         String bookingSummary = "Guest Name: " + guestName + "\n" +
+                "ID Number: " + idNumber + "\n" + // Added ID number to the summary
                 "Room Type: " + roomType + "\n" +
                 "Check-in: " + checkInDate + "\n" +
                 "Check-out: " + checkOutDate + "\n" +
-                (kidsBedIncluded ? "Kid's Bed: Included\n" : "") +
-                (roomServiceIncluded ? "Room Service: Included\n" : "") +
-                "Room Price: $" + roomPrice + "\n" +
-                "Extra Costs: $" + extraCosts + "\n" +
                 "Total Price: $" + totalPrice;
         bookingSummaryTextView.setText(bookingSummary);
 
